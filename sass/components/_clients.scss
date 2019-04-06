@@ -1,0 +1,18 @@
+.client{
+    height: 20rem;
+    width: 100%;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.6);
+
+    background-color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        &__img{
+        display: block;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+}

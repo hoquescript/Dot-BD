@@ -1,0 +1,118 @@
+.navigation {
+    // position: fixed;
+    // z-index: 1;
+
+    background-color: #fff;
+    // padding:0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__cut{
+        width: 96%;
+        margin:1% 2%;
+        box-shadow: 0 0 15px rgba(#000, .3);
+    }
+    &__logo{
+        height:5.5rem;
+        margin-left: 8rem;
+    }
+    &__list {
+        margin-right: 4rem;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    &__list::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    &__item {
+        float: left;
+        padding: 2rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: block;
+            transition: transform .2s;
+            color: var(--color-primary);
+        }
+    }
+
+    &__link:hover {
+        transform: translateY(-4px);
+    }
+}
+.sublink{
+    position: relative;
+    display: block;
+    &__block{
+        display: none;
+        height: 20rem;
+        width: 60rem;
+        padding: 2rem;
+        border-left: 2px solid var(--color-primary);
+        border-right: 2px solid var(--color-primary);
+        border-bottom: 2px solid var(--color-primary);
+        background-color: #fff;
+        position: absolute;
+        top:  6.7rem;
+        left: -205%;
+        z-index: 1;
+    }     
+    &:hover &__block{
+        display: block;
+    } 
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        &:not(:last-child){
+            border-left: 2px solid #1C1D3E;
+        }
+    }
+    &__link{
+        font-size: 1.5rem;
+        &:hover{
+            color: var(--color-primary);
+        }
+    }
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0 8rem 0;
+    &__img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__content {
+        padding-left: 4rem;
+
+        p {
+            font-size: 1.6rem;
+            padding: 1.5rem 0;
+        }
+    }
+
+    &__title {
+        font-size: 5rem;
+        font-weight: 700;
+        color: #1C1D3E;
+        letter-spacing: 4px;
+        line-height: 1.2;
+    }
+}

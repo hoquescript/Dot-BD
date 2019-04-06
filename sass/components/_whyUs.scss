@@ -1,0 +1,29 @@
+.why{
+    &__title{
+        font-size: 5rem;
+        font-weight: 700;
+        color: #1C1D3E;
+        letter-spacing: 4px;
+        line-height: 1.2;
+    }
+    &__list{
+        list-style-type: symbols()
+    }
+    &__item{
+        font-size: 1.8rem;
+    }
+    &__icon{
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-right: 1rem;
+        fill: var(--color-primary);
+    }
+    &__img{
+        background-image: url('../img/04.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    &__image{       
+        width: 100%;
+    }
+}

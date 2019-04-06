@@ -1,0 +1,17 @@
+{
+  "name": "dotbd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^4.5.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    color: #777;
+    text-decoration: none;
+}
+.container{   
+    max-width: 114rem;
+    margin: 0 auto;
+}
+.button{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: var(--color-primary);
+    color:#fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.background{
+    background-image: url('../img/background1.png');
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+#particles-js{
+    height:30rem;
+    width: 100%;
+    background-color: var(--color-primary);
+    position: relative;
+}

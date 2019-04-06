@@ -1,0 +1,31 @@
+.swiper-container,
+.swiper-container * {
+    box-sizing: border-box;
+}
+
+.section-feature .swiper-container {
+    width: 100%;
+    height: 40rem;
+}
+
+.section-clients .swiper-container {
+    height: 35rem;
+    width: 100%;
+    color: white;
+}
+
+.section-testimonial .swiper-container {
+    height: 50rem;
+    width: 100%;
+    // color: red;
+    background-image: url('../img/testmonial-back.png');
+
+}
+
+.swiper-slide {
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 2px solid red;
+}
